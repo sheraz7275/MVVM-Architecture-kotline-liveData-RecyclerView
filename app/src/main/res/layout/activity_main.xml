@@ -20,6 +20,7 @@
         android:text="Tap To Get Countries Information"
         android:layout_centerInParent="true"
         android:onClick="GetData"
+        android:padding="15dp"
         android:textSize="@dimen/txtSize"
         >
 
