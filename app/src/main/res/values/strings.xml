@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">GreenyAssignment</string>
-    <string name="CountryName">Country Name</string>
-    <string name="CountryCapital">Country Capital</string>
+    <string name="CountryName">Country Name: </string>
+    <string name="CountryCapital">Capital: </string>
 
-    <string name="CountryRegion">Country Region</string>
+    <string name="CountryRegion">Region: </string>
 
 </resources>

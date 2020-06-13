@@ -25,55 +25,120 @@
 
     >
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
+        android:layout_marginStart="3dp"
         android:layout_marginTop="3dp"
-        android:text="@{mDataModel.countryName}"
-        android:textColor="@color/black"
-        android:textSize="@dimen/txtSize"
-        android:id="@+id/txtCountryName"
-
-
+        android:orientation="horizontal"
+        android:id="@+id/linerLayName"
         >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="@string/CountryName"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txtSize"
+            android:textStyle="bold"
 
-    </TextView>
 
-    <TextView
-        android:layout_width="wrap_content"
+            >
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@{mDataModel.countryName}"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txtSize"
+            android:id="@+id/txtCountryName"
+
+
+            >
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
-        android:text="@{mDataModel.countryCapital}"
-        android:textColor="@color/black"
-        android:layout_below="@+id/txtCountryName"
-        android:textSize="@dimen/txtSize"
-        android:id="@+id/txtCountryCapital"
-
-
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal"
+        android:id="@+id/linerLayCapital"
+        android:layout_below="@+id/linerLayName"
         >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="@string/CountryCapital"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txtSize"
+            android:textStyle="bold"
 
-    </TextView>
-    <TextView
-        android:layout_width="wrap_content"
+
+
+            >
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@{mDataModel.countryCapital}"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txtSize"
+            android:id="@+id/txtCountryCapital"
+
+
+            >
+
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
-        android:text="@{mDataModel.countryRegion}"
-        android:textColor="@color/black"
-        android:layout_below="@+id/txtCountryCapital"
-        android:textSize="@dimen/txtSize"
-        android:id="@+id/txtCountryRegion"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
         android:layout_marginBottom="3dp"
-
-
-
-
+        android:orientation="horizontal"
+        android:id="@+id/linerLayRegion"
+        android:layout_below="@+id/linerLayCapital"
         >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="@string/CountryRegion"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txtSize"
+            android:textStyle="bold"
 
-    </TextView>
 
+
+            >
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@{mDataModel.countryRegion}"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txtSize"
+            android:id="@+id/txtCountryRegion"
+
+
+            >
+
+        </TextView>
+
+    </LinearLayout>
 
 
 </RelativeLayout>
