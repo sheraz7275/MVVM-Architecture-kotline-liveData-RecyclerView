@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <data class ="ItemBinding">
+
+        <variable
+            name="mDataModel"
+            type="com.example.greenyassignment.model.DataModelCountries" />
+
+    </data>
+
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    android:background="@color/gray"
+
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="3dp"
+        android:text="@{mDataModel.countryName}"
+        android:textColor="@color/black"
+        android:textSize="@dimen/txtSize"
+        android:id="@+id/txtCountryName"
+
+
+        >
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:text="@{mDataModel.countryCapital}"
+        android:textColor="@color/black"
+        android:layout_below="@+id/txtCountryName"
+        android:textSize="@dimen/txtSize"
+        android:id="@+id/txtCountryCapital"
+
+
+        >
+
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:text="@{mDataModel.countryRegion}"
+        android:textColor="@color/black"
+        android:layout_below="@+id/txtCountryCapital"
+        android:textSize="@dimen/txtSize"
+        android:id="@+id/txtCountryRegion"
+        android:layout_marginBottom="3dp"
+
+
+
+
+        >
+
+    </TextView>
+
+
+
+</RelativeLayout>
+
+</layout>
